@@ -3,10 +3,10 @@ const pageConfig = {
   title: "数字套利 •「AM科技」's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://amclubss.com', label: '博客', highlight: true },
-    { link: 'https://809098.xyz', label: 'Blog'},
-    { link: 'https://youtube.com/@AM_CLUBS', label: 'YouTube' },
-    { link: 'https://github.com/amclubs', label: 'GitHub' }, 
+    { link: 'https://zhaoxia87-moontv.hf.space', label: 'moontv', highlight: true },
+    { link: 'https://zhaoxia87-ain8n.hf.space', label: 'ain8n',highlight: true},
+   // { link: 'https://youtube.com/@AM_CLUBS', label: 'YouTube' },
+   // { link: 'https://github.com/amclubs', label: 'GitHub' }, 
   ],
 }
 
@@ -28,6 +28,17 @@ const workerConfig = {
       target: 'https://zhaoxia87-moontv.hf.space',
       tooltip: 'My production server monitor',
       statusPageLink: 'https://zhaoxia87-moontv.hf.space',
+      timeout: 10000,
+    },
+     {
+      id: 'huggfacen8n',
+      name: 'Zhaoxia87/ain8n',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://zhaoxia87-ain8n.hf.space',
+      tooltip: 'My production server monitor',
+      statusPageLink: 'https://zhaoxia87-ain8n.hf.space',
       timeout: 10000,
     },
   ],
